@@ -58,6 +58,25 @@
     padding: var(120px 0);
     width: 25%;
 }
+#eventButtonsContainer{
+    display: flex;
+
+    border: 1px solid green;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15%;
+}
+#inspectorContainer{
+    display: flex;
+
+    border: 1px solid skyblue;
+    position: relative;
+    height: 85%;
+    top: 0;
+}
 #calendarContainer{
     display: block;
 
@@ -66,5 +85,48 @@
     top: 10%;
     left: 25%;
     bottom: 0;
-    width: 85%;
+    width: 75%;
+}
+#labelContainer{
+    display: grid;
+    
+    border: 1px solid tomato;
+    position:relative;
+    height: 10%;
+}
+.calendar-grid{
+    display:grid;
+
+    border: 1px solid aquamarine;
+    position:relative;
+    height:90%;
+
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    margin: 0 auto;
+    padding: 0;
+}
+.label-grid{
+    display:grid;
+
+    border: 1px solid aquamarine;
+    position:relative;
+    height:90%;
+
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    margin: 0 auto;
+    padding: 0;
+}
+.day-label{
+    border: 1px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 0;
+
+}
+.day{
+    border: 1px solid whitesmoke;
 }
