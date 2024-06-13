@@ -1,7 +1,7 @@
 #wholePage{
     display: block;
 
-    background: darkslategray;
+    background: rgb(31, 31, 31);
     left: 0;
     min-height: 100%;
     position:absolute;
@@ -17,35 +17,42 @@
     top: 0;
     left: 25%;
     height: 10%;
-    width: 85%;
+    width: 75%;
+}
+.navbar-container{
+    display:flex;
+    border: 1px solid tomato;
 
+    height: 100%;
+    min-height: 100%;
+
+    justify-content: space-evenly;
     align-content: center;
 }
-#navBarContainer{
-    display: flex;
-
-    border: 1px solid white;
-
-    height: 50%;
-
-}
-#titleContainer{
+.title-container{
     display: flex;
 
     border: 1px solid black;
     position: relative;
-    left: 5%;
+    left: 1%;
 
-    width: 40%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: underline;
+    gap:10px;
 }
-#userContainer{
+#search-container{
+    display: flex;
+
+    border: 1px solid orange;
+    position: relative;
+}
+#user-container{
     display: flex;
 
     border: 1px solid magenta;
     position: relative;
-    left: 15%;
-
-    width: 30%;
 }
 #leftContainer{
     display: block;
@@ -88,31 +95,26 @@
     width: 75%;
 }
 #labelContainer{
-    display: grid;
+    display: block;
     
     border: 1px solid tomato;
     position:relative;
     height: 10%;
 }
-.calendar-grid{
-    display:grid;
+#daysContainer{
+    display: block;
 
-    border: 1px solid aquamarine;
-    position:relative;
-    height:90%;
-
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1px;
-    margin: 0 auto;
-    padding: 0;
+    border: 1px solid rebeccapurple;
+    position: relative;
+    height: 90%
 }
 .label-grid{
     display:grid;
 
-    border: 1px solid aquamarine;
+    border: 1px solid rosybrown;
     position:relative;
-    height:90%;
-
+    width: 100%;
+    height: 100%;
     grid-template-columns: repeat(7, 1fr);
     gap: 1px;
     margin: 0 auto;
@@ -125,8 +127,24 @@
     justify-content: center;
     list-style: none;
     margin-left: 0;
+    color: white;
+}
+.calendar-grid{
+    display:grid;
 
+    border: 1px solid aquamarine;
+    position:relative;
+    height:100%;
+
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    margin: 0 auto;
+    padding: 0;
 }
 .day{
     border: 1px solid whitesmoke;
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    color: white;
 }
