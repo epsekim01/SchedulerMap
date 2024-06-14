@@ -19,9 +19,7 @@ function App() {
   return (
     <>
       <div id="wholePage">
-        <div id="topContainer">
-          <NavBar></NavBar>
-        </div>
+        <NavBar></NavBar>
         <div id="leftContainer">
           <div id="eventButtonsContainer"></div>
           <div id="inspectorContainer"></div>
